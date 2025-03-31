@@ -30,22 +30,13 @@
             margin-left: auto;
             display: flex;
         }
-        .container-sobre {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: left;
-            margin-top: 40px;
-        }
         .img-fluid {
             width: 300px;
             height: 400px;
             border: 4px solid #E0C3FC;
             margin-right: 20px;
         }
-        .sobre_mim {
-            max-width: 500px;
-        }
+
         .projetos {
             display: flex;
             justify-content: center;
@@ -59,8 +50,12 @@
             padding: 20px;
             border-radius: 10px;
             width: 300px;
+            height: 250px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         footer {
             background-color: #3D2352;
@@ -77,6 +72,11 @@
             color: #F8E8FF;
             text-decoration: underline;
         }
+        .sobre-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
@@ -88,59 +88,58 @@
                 </div>
             </nav>
             <nav class="Navbar_Itens_Direito">
-                <div class="primeira_navbar">
-                    <a href="#sobre">Sobre Mim</a>
-                </div>
-                <div class="segunda_navbar">
-                    <a href="#projetos">Projetos</a>
-                </div>
-                <div class="terceira_navbar">
-                    <a href="#contato">Contato</a>
-                </div>
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
     
     <main>
-        <section id="sobre">
-            <div class="container-sobre">
+        <section id="sobre" class="container mt-4">
+            <div class="sobre-container">
                 <img src="img/eu.png.jpeg" class="img-fluid" alt="Maria Gabriela">
-                <div class="sobre_mim">
+                <div class="text-white text-start">
                     <h2>Sobre Mim</h2>
                     <p>Meu nome é Maria Gabriela Massignan, tenho 17 anos e estudo no SENAI. Meu aniversário é no dia 27/04 e tenho um grande interesse na área de desenvolvimento de sistemas. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades para construir soluções inovadoras. Meu objetivo é atuar profissionalmente nesse ramo, contribuindo para o desenvolvimento de softwares eficientes e de qualidade.</p>
                 </div>
             </div>
         </section>
 
-        <section id="projetos">
+        <section id="projetos" class="container mt-4">
             <h2>Projetos</h2>
-            <div class="projetos">
-                <div class="projeto-card">
-                    <h3>Prototipação de Loja de Eletrônicos</h3>
-                    <p>Projeto de modelagem de sistema para uma loja de eletrônicos, incluindo fluxogramas e diagramas UML.</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="projeto-card">
+                        <h3>Prototipação de Loja de Eletrônicos</h3>
+                        <p>Projeto de modelagem de sistema para uma loja de eletrônicos, incluindo fluxogramas e diagramas UML.</p>
+                    </div>
                 </div>
-                <div class="projeto-card">
-                    <h3>Sistema de Estoque</h3>
-                    <p>Desenvolvimento de um sistema de controle de estoque para uma loja de móveis. Tecnologias utilizadas: HTML, CSS, Tkinter.</p>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="projeto-card">
+                        <h3>Sistema de Estoque</h3>
+                        <p>Desenvolvimento de um sistema de controle de estoque para uma loja de móveis. Tecnologias utilizadas: HTML, CSS, Tkinter.</p>
+                    </div>
                 </div>
-                <div class="projeto-card">
-                    <h3>Banco de Dados de Loja</h3>
-                    <p>Criação de um banco de dados para uma loja de móveis, utilizando MySQL e PhpMyAdmin. Inclui MER e MRN.</p>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="projeto-card">
+                        <h3>Banco de Dados de Loja</h3>
+                        <p>Criação de um banco de dados para uma loja de móveis, utilizando MySQL e PhpMyAdmin. Inclui MER e MRN.</p>
+                    </div>
                 </div>
-                <div class="projeto-card">
-                    <h3>Site Tecverse-eletrônicos</h3>
-                    <p>Desenvolvimento de um site institucional para uma empresa fictícia, utilizando HTML, CSS e Bootstrap.</p>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="projeto-card">
+                        <h3>Site Tecverse-eletrônicos</h3>
+                        <p>Desenvolvimento de um site institucional para uma empresa fictícia, utilizando HTML, CSS e Bootstrap.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contato">
-            <div class="contato"> 
-                <h2>Entre em Contato</h2>
+        <section id="contato" class="container mt-4 text-center">
+            <h2>Entre em Contato</h2>
             <p><strong>Email:</strong> mariagabrielamassignan@gmail.com</p>
             <p><strong>Telefone:</strong> (47) 99705-5922</p>
-            </div>
-            
             <p>
                 <a href="https://www.instagram.com/mgmassignan/" target="_blank">Instagram</a> |
                 <a href="https://www.linkedin.com/in/maria-gabriela-massignan-28a673339/" target="_blank">LinkedIn</a> |
