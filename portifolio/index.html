@@ -5,135 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        /* Navbar */
+        body {
+            background-color: #2A1A3D;
+            color: #D8BFD8;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
         .Navbar {
-            background-color: #c2b3e4; /* Roxo claro */
+            background-color: #3D2352;
             display: flex;
             padding: 16px;
-            font-family: sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
-        
         .Navbar a {
-            color: white;
+            color: #E0C3FC;
             text-decoration: none;
             margin-right: 15px;
             font-weight: bold;
         }
-
         .Navbar_Itens_Direito {
             margin-left: auto;
             display: flex;
         }
-
-        /* Fundo do site */
-        body {
-            background-color: rgb(143, 129, 165); 
-            color: white; 
-            text-align: center; 
-            font-family: Arial, sans-serif;
+        .container-sobre {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            margin-top: 40px;
         }
-
-        
         .img-fluid {
-            width: 280px;
-            height: 300px;
-            border-radius: 50%; 
-            border: 4px solid white; 
-            display: block;
-            margin: 20px auto; 
+            width: 300px;
+            height: 400px;
+            border: 4px solid #E0C3FC;
+            margin-right: 20px;
         }
-
-        /* Rodapé */
+        .sobre_mim {
+            max-width: 500px;
+        }
+        .projetos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .projeto-card {
+            background-color: #3D2352;
+            color: #D8BFD8;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
         footer {
-            background-color: #c2b3e4;
+            background-color: #3D2352;
             padding: 10px 0;
             margin-top: 20px;
+            text-align: center;
         }
-
-        footer a {
-            color: white;
+        a {
+            color: #E0C3FC;
             text-decoration: none;
-            margin: 0 10px;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #F8E8FF;
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
     <header>
-
-            <body>
-                <div class="Navbar">
-                    <nav class="Navbar_Itens_">
-                        <div class="titulo_navbar">
-                            <p2>Start Bootstrap</p2>
-                        </div>
-                    </nav>
-                    <nav class="Navbar_Itens_Direito">
-                        <div class="primeira_navbar">
-                            <a href="Home.html">Sobre Mim</a>
-                        </div>
-                        <div class="segunda_navbar">
-                            <a href="About.html">Projetos</a>
-                        </div>
-                        <div class="terceira_navbar">
-                            <a href="Contact.html">Contato</a>
-                        </div>
-                        <div class="quarta_navbar">
-                            <a href="Services.html">Services</a>
-                        </div>
-                    </nav>
+        <div class="Navbar">
+            <nav class="Navbar_Itens_">
+                <div class="titulo_navbar">
+                    <p><strong>Maria Gabriela Massignan</strong></p>
                 </div>
-            </body>
-            </html>
-            
-        </header>
-        <main>
-            <img src="img/eu.png.jpg" class="img-fluid" alt="Gustavo Joaquim" width="200"> 
-        </main>
-        <footer>
-           
-<body>
-    <div class="Navbar">
-        <nav class="Navbar_Itens_">
-            <div class="titulo_navbar">
-                <p2>Start Bootstrap</p2>
+            </nav>
+            <nav class="Navbar_Itens_Direito">
+                <div class="primeira_navbar">
+                    <a href="#sobre">Sobre Mim</a>
+                </div>
+                <div class="segunda_navbar">
+                    <a href="#projetos">Projetos</a>
+                </div>
+                <div class="terceira_navbar">
+                    <a href="#contato">Contato</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="sobre">
+            <div class="container-sobre">
+                <img src="img/eu.png.jpeg" class="img-fluid" alt="Maria Gabriela">
+                <div class="sobre_mim">
+                    <h2>Sobre Mim</h2>
+                    <p>Meu nome é Maria Gabriela Massignan, tenho 17 anos e estudo no SENAI. Meu aniversário é no dia 27/04 e tenho um grande interesse na área de desenvolvimento de sistemas. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades para construir soluções inovadoras. Meu objetivo é atuar profissionalmente nesse ramo, contribuindo para o desenvolvimento de softwares eficientes e de qualidade.</p>
+                </div>
             </div>
-        </nav>
-        <nav class="Navbar_Itens_Direito">
-            <div class="primeira_navbar">
-                <a href="Home.html">Home</a>
-            </div>
-            <div class="segunda_navbar">
-                <a href="About.html">About</a>
-            </div>
-            <div class="terceira_navbar">
-                <a href="Contact.html">Contact</a>
-            </div>
-            <div class="quarta_navbar">
-                <a href="Services.html">Services</a>
-            </div>
-        </nav>
-    </div>
-</body>
-</html>
- <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+        </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
-</html>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos">
+                <div class="projeto-card">
+                    <h3>Prototipação de Loja de Eletrônicos</h3>
+                    <p>Projeto de modelagem de sistema para uma loja de eletrônicos, incluindo fluxogramas e diagramas UML.</p>
+                </div>
+                <div class="projeto-card">
+                    <h3>Sistema de Estoque</h3>
+                    <p>Desenvolvimento de um sistema de controle de estoque para uma loja de móveis. Tecnologias utilizadas: HTML, CSS, Tkinter.</p>
+                </div>
+                <div class="projeto-card">
+                    <h3>Banco de Dados de Loja</h3>
+                    <p>Criação de um banco de dados para uma loja de móveis, utilizando MySQL e PhpMyAdmin. Inclui MER e MRN.</p>
+                </div>
+                <div class="projeto-card">
+                    <h3>Site Tecverse-eletrônicos</h3>
+                    <p>Desenvolvimento de um site institucional para uma empresa fictícia, utilizando HTML, CSS e Bootstrap.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="contato"> 
+                <h2>Entre em Contato</h2>
+            <p><strong>Email:</strong> mariagabrielamassignan@gmail.com</p>
+            <p><strong>Telefone:</strong> (47) 99705-5922</p>
+            </div>
+            
+            <p>
+                <a href="https://www.instagram.com/mgmassignan/" target="_blank">Instagram</a> |
+                <a href="https://www.linkedin.com/in/maria-gabriela-massignan-28a673339/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/mgmassignan" target="_blank">GitHub</a>
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Maria Gabriela Massignan</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
+</html>
